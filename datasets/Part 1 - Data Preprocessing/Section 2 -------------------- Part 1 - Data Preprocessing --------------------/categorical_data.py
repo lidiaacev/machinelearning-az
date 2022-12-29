@@ -34,7 +34,7 @@ ct = ColumnTransformer(
 #X = onehotencoder.fit_transform(X).toarray()
 X = np.array(ct.fit_transform(X), dtype=np.float)
 
-#para poner variable dummie en la dpeendiente, como es solamente "si", "no", no hace falta hacer el onehotencoder porque el 1 es si y el 0 no en regr logistica,
-#ya estaria codificado por asi decir
+##para poner variable dummie en la dpeendiente, como es solamente "si", "no", no hace falta hacer el onehotencoder porque el 1 es si y el 0 no en regr logistica,
+##ya estaria codificado por asi decir
 labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
