@@ -29,3 +29,9 @@ from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
+
+##se escalan (normaliza o estandariza) todas las variables predictoras para que todas jueguen con el mismo peso. En el caso de la variable que quermeos predecir,
+##en algoritmos de clasificacion no hay que estandarizarla porque yo lo que quiero es que me diga si compra o no. En el caso de algoritmos de regresion por ejemplo,
+##si habria que escalarlas.
+
+##* En R las variables que hemos convertido en numerica que son categoricas, no se pueden escalar asi que escalamos solamente las numericas
